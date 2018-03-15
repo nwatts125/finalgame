@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=Sprite
+comment1.params=deltax\ deltay\ fpath
+comment1.target=Sprite(int,\ int,\ java.lang.String)
+comment2.params=x
+comment2.target=void\ setX(int)
+comment3.params=y
+comment3.target=void\ setY(int)
+comment4.params=path
+comment4.target=void\ changeImage(java.lang.String)
+comment5.params=
+comment5.target=boolean\ collides()
+comment6.params=
+comment6.target=void\ move()
+comment7.params=args
+comment7.target=void\ main(java.lang.String[])
+numComments=8

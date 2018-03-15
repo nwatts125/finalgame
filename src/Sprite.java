@@ -23,7 +23,7 @@ public abstract class Sprite extends EzImage {
     }
     
     public boolean collides(){
-        
+        return false;
     }
     
     public abstract void move();
