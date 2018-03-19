@@ -8,6 +8,10 @@ public abstract class Sprite extends EzImage {
         dx = deltax;
         dy = deltay;
     }
+
+    public Sprite(){
+        super();
+    }
     
     public void setX(int x){
         dx = x;
