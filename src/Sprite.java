@@ -15,20 +15,19 @@ public abstract class Sprite extends EzImage {
         super();
     }
     
-    public void setX(int x){
-        dx = x;
-    }
-
-    public void setY(int y){
-        dy = y;
+    public void setLocation(int x, int y)
+    {
+        super.setLocation(x,y);
+        rect.setLocation(x,y);
     }
     
     public void changeImage(String path){
         this.setImage(path);
     }
     
-    public void setImageSize(){
-        this.setBounds(this.getX(), this.getY(), this.getWidth(), this.getHeight());
+    public void setImageSize(int w, int h){
+        setSize(w,h);
+        rect.setSize(w,h);
         this.repaint();
     }
     
