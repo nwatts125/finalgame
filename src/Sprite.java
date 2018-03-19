@@ -29,12 +29,6 @@ public abstract class Sprite extends EzImage{
     public int getDY(){
         return dy;
     }
-    // public int getX(){
-        // return x;
-    // }
-    // public int getY(){
-        // return y;
-    // }
     public boolean collides(){
         return false;
     }
