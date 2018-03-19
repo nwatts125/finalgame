@@ -45,7 +45,17 @@ public class EzImage extends JComponent implements MouseListener {
     public void paint(Graphics g)  {
         g.drawImage(content, 0, 0, getWidth(), getHeight(), this);
         paintChildren(g);
-    } 
+    }
+
+    public int getImageWidth(){
+        return content.getWidth(null);
+    }
+
+    public int getImageHeight()
+    {
+        return content.getHeight(null);
+    }
+
     public void mouseClicked(MouseEvent e){}
     public void mouseExited(MouseEvent e){}
     public void mousePressed(MouseEvent e){}

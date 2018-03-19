@@ -1,7 +1,12 @@
+import java.awt.Rectangle;
+
 public abstract class Sprite extends EzImage{
+
     protected int dx;
     protected int dy;
     protected String filepath;
+    protected Rectangle rec;
+
     public Sprite(int x, int y, int w, int h, int dex, int dey, String fp){
         super(x,y,w,h);
         dx = dex;
@@ -19,9 +24,6 @@ public abstract class Sprite extends EzImage{
     }
     public void setDY(int d){
         dy = d;
-    }
-    public void imageChange(){
-        this.setImage(filepath);
     }
     public int getDX(){
         return dx;
