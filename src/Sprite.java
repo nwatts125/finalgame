@@ -31,10 +31,6 @@ public abstract class Sprite extends EzImage {
         this.repaint();
     }
     
-    public boolean collides(){
-        return false;
-    }
-    
     public abstract void move();
 
     public Rectangle getRect()
