@@ -1,6 +1,8 @@
+import java.awt.*;
 
 public abstract class Sprite extends EzImage {
     protected int dx, dy;
+    protected Rectangle rect;
     
     public Sprite(int deltax, int deltay, String fpath){
         super();
@@ -31,7 +33,16 @@ public abstract class Sprite extends EzImage {
     }
     
     public abstract void move();
-    
+
+    public Rectangle getRect()
+    {
+        return rect;
+    }
+
+    public boolean collides (Sprite s)
+    {
+        return rect.intersects(s.getRect());
+    }
     public static void main(String[] args) {
         System.out.println();
     }
