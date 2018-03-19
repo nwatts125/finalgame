@@ -1,38 +1,38 @@
-import java.awt.Rectangle;
 
-public abstract class Sprite extends EzImage{
-
-    protected int dx;
-    protected int dy;
-    protected String filepath;
-    protected Rectangle rec;
-
-    public Sprite(int x, int y, int w, int h, int dex, int dey, String fp){
-        super(x,y,w,h);
-        dx = dex;
-        dy = dey;
-        filepath = fp;
-    }
-    public Sprite(){
+public abstract class Sprite extends EzImage {
+    protected int dx, dy;
+    
+    public Sprite(int deltax, int deltay, String fpath){
         super();
-        dx = 0;
-        dy = 0;
-        filepath = "";
+        this.changeImage(fpath);
+        dx = deltax;
+        dy = deltay;
     }
-    public void setDX(int d){
-        dx = d;
+    
+    public void setX(int x){
+        dx = x;
     }
-    public void setDY(int d){
-        dy = d;
+
+    public void setY(int y){
+        dy = y;
     }
-    public int getDX(){
-        return dx;
+    
+    public void changeImage(String path){
+        this.setImage(path);
     }
-    public int getDY(){
-        return dy;
+    
+    public void setImageSize(){
+        this.setBounds(this.getX(), this.getY(), this.getWidth(), this.getHeight());
+        this.repaint();
     }
+    
     public boolean collides(){
         return false;
     }
+    
     public abstract void move();
+    
+    public static void main(String[] args) {
+        System.out.println();
+    }
 }

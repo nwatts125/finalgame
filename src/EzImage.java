@@ -1,3 +1,4 @@
+
 import java.awt.Toolkit.*;
 import java.awt.*;
 import javax.imageio.ImageIO;
@@ -9,23 +10,27 @@ import java.awt.Image;
 public class EzImage extends JComponent implements MouseListener {
 //implements java.awt.image.ImageObserver, MouseListener  {
     private Image content;
+  
 // Constructor methods
     public EzImage()  {
         super();
         setBounds(0, 0, 10, 10);
         addMouseListener(this);
     } 
+
     public EzImage(int x, int y, int w, int h)  {
         super();
         setBounds(x, y, w, h);
         addMouseListener(this);
     } 
-        public EzImage(int x, int y, int w, int h, String s)  {
+
+    public EzImage(int x, int y, int w, int h, String s)  {
         super();
         setBounds(x, y, w, h);
         setImage(s);
         addMouseListener(this);
     } 
+
 // ----- will set the image to a new picture named s -------------------------------    
         public void setImage(String s)  {
         java.net.URL url = getClass().getResource(s);  
@@ -62,3 +67,4 @@ public class EzImage extends JComponent implements MouseListener {
     public void mouseEntered(MouseEvent e){}
     public void mouseReleased(MouseEvent e){}
 }
+
