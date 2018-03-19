@@ -1,5 +1,4 @@
 
-
 public abstract class Sprite extends EzImage {
     protected int dx, dy;
     
