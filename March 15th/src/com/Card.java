@@ -1,14 +1,21 @@
 import javax.swing.*;
 
-public class Card extends JLabel{
+public class Card extends JPanel{
     protected int value;
-    protected boolean flipped;
+    protected boolean flipped, matched;
     protected String question;
-    protected JFrame gWin;
+    protected JLabel gWin;
     protected ImageIcon back;
     public Card(String s){
-        back = new ImageIcon(s);
-
+        JPanel back = new JPanel("");
+//         JLabel test = new JLabel("Test");
+        JButton back = new JButton("YEET!");
+        back.setIcon(new ImageIcon(s));
+//        JLabel yeet = new JLabel("Test Text");
+//        gWin = new JLabel("Game Window");
+        this.add(back);
+//        this.setVisible(true);
+//        gWin.add(back);
     }
     public int getValue(){
         return  value;
