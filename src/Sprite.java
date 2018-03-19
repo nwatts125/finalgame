@@ -22,6 +22,11 @@ public abstract class Sprite extends EzImage {
         this.setImage(path);
     }
     
+    public void setImageSize(){
+        this.setBounds(this.getX(), this.getY(), this.getWidth(), this.getHeight());
+        this.repaint();
+    }
+    
     public boolean collides(){
         return false;
     }
