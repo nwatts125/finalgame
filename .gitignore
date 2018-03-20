@@ -63,8 +63,9 @@ fabric.properties
 ### Intellij+all Patch ###
 # Ignores the whole idea folder
 # See httpsgithub.comjoeblaugitignore.ioissues186 and httpsgithub.comjoeblaugitignore.ioissues360
-
 .idea
 
-
+#Java
+.DS_Store
+.class
 # End of httpswww.gitignore.ioapibluej,intellij+all
