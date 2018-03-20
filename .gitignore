@@ -66,5 +66,6 @@ fabric.properties
 
 .idea
 
-
+.DS_Store
+.Class
 # End of httpswww.gitignore.ioapibluej,intellij+all
