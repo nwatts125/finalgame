@@ -10,11 +10,13 @@ public abstract class Sprite extends EzImage {
         this.changeImage(fpath);
         dx = deltax;
         dy = deltay;
+        rect = new Rectangle();
     }
 
     //default constructor.  if used, all variables need to be added manually with setters
     public Sprite(){
         super();
+        rect = new Rectangle();
     }
 
     //sets location
@@ -37,10 +39,9 @@ public abstract class Sprite extends EzImage {
     }
 
     //sets the size of the image, may need to be changed if you're changing the picture
-    public void setImageSize(int w, int h){
-        setSize(w,h);
+    public void setSize(int w, int h){
+        super.setSize(w,h);
         rect.setSize(w,h);
-        this.repaint();
     }
 
     //moves the sprite, called every frame from the game
