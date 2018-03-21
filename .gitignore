@@ -69,3 +69,4 @@ fabric.properties
 .DS_Store
 .Class
 # End of httpswww.gitignore.ioapibluej,intellij+all
+*.class

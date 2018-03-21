@@ -1,0 +1,2 @@
+interface TableDataModel extends Model {
+}
