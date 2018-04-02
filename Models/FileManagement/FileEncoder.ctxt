@@ -2,4 +2,5 @@
 comment0.target=FileEncoder
 comment1.params=mdl
 comment1.target=void\ save(Model)
+comment1.text=\r\n\ Save\ takes\ in\ a\ object\ the\ implements\ Model.\r\n\ It\ will\ then\ save\ it\ to\ a\ .xml\ file\ and\ later\ be\ decoded.\r\n
 numComments=2
