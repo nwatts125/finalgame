@@ -1,3 +1,5 @@
+package Models.FileManagement;
+
 interface Model{
   public void saveStrings(String[] s);
   public void saveInts(int[] i);

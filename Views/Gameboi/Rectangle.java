@@ -1,3 +1,5 @@
+package Views.Gameboi;
+
 import javax.swing.*;
 import java.awt.*;
 

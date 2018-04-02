@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.target=FileEncoder
+comment1.params=mdl
+comment1.target=void\ save(Model)
+numComments=2
