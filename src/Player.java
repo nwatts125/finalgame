@@ -7,28 +7,31 @@ public class Player{
 
     public Player(){
         currentScore = 0;
+        lives = 1;
     }
 
+    //Returns the High Score
     public int getTopScore(){
         return topScore;
     }
-
+    //Returns the Player's Current Score
     public int getScore() {
         return currentScore;
     }
-
+    //Returns the Current number of lives
     public int getLives() {
         return lives;
     }
-
-    public void setTopScore(int hiScore) {
-        this.topScore = hiScore;
+    //Sets a new High Score. Checks to make sure
+    public void setTopScore(int newScore) {
+        if(topScore<newScore)
+            topScore = newScore;
     }
-
+    //Sets the Player's current score
     public void setScore(int score) {
         currentScore = score;
     }
-
+    //Sets the Player's Lives
     public void setLives(int lives) {
         this.lives = lives;
     }
