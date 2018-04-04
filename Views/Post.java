@@ -1,4 +1,5 @@
 import javax.swing.JComponent;
+import javax.swing.JFrame;
 import javax.swing.JLabel;
 
 class Post extends JComponent{
@@ -12,6 +13,7 @@ class Post extends JComponent{
     };
     for (int i = 0; i < cols.length; i++) {
       cols[i].setBounds(i * 50, 0, 50, 50);
+      add(cols[i]);
     }
   }
   public void setPost(String str1, String str2, String str3){
@@ -26,5 +28,15 @@ class Post extends JComponent{
       returnArray[i] = cols[i].getText();
     }
     return returnArray;
+  }
+  public static void main(String[] args) {
+    JFrame main = new JFrame();
+    main.setLayout(null);
+    main.setVisible(true);
+    main.setBounds(0,0,500,500);
+    main.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    for(int i = 0; i < 100; i++){
+      main.add(new Post(0,i * 50,"Memes","Total","Reee"));
+    }
   }
 }
