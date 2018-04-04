@@ -1,4 +1,4 @@
-package Views.Gameboi;
+package Views;
 
 import javax.swing.*;
 import java.awt.*;
@@ -7,11 +7,11 @@ import java.awt.*;
 public class Rectangle extends JComponent  {
 
     /**
-	 * 
+	 *
 	 */
 	private static final long serialVersionUID = 1L;
 
-	/**    All values are measured in pixels:  x - horizonal location,  y - vertical location,  
+	/**    All values are measured in pixels:  x - horizonal location,  y - vertical location,
      *     w - the width,  h - the height,   color - black
      */
     public Rectangle(int x, int y, int w, int h)  {
@@ -19,8 +19,8 @@ public class Rectangle extends JComponent  {
         setBounds(x, y, w, h);
         setBackground(Color.black);
     }
-    
-    /**    All values are measured in pixels:  x - horizonal location,  y - vertical location,  
+
+    /**    All values are measured in pixels:  x - horizonal location,  y - vertical location,
      *     w - the width,  h - the height,   color - fill color
      */
     public Rectangle(int x, int y, int w, int h, Color c)  {
@@ -28,40 +28,40 @@ public class Rectangle extends JComponent  {
         setBounds(x, y, w, h);
         setBackground(c);
     }
-    
-    /**   
+
+    /**
      *     Returns the color of the container
      */
     public Color getContainerColor()
     {
         return this.getParent().getBackground();
     }
-    
+
     public int getContainerX()
     {
         return this.getParent().getX();
     }
-    
+
     public int getContainerY()
     {
         return this.getParent().getY();
     }
-    
+
     public int getContainerWidth()
     {
         return this.getParent().getWidth();
     }
-    
+
     public int getContainerHeight()
     {
         return this.getParent().getHeight();
     }
-    
+
     public void setContainerBackground(Color c)
     {
         this.getParent().setBackground(c);
     }
-    
+
     /**    This method draws a filled Rectangle and is called when the screen is refreshed or repainted
      */
     public void paint(Graphics g)  {

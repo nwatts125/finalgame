@@ -9,9 +9,9 @@ import java.io.IOException;
  * @author (your name)
  * @version (a version number or a date)
  */
-public class Game{
-    public Game(){
-        
+public class FileManager{
+    public FileManager(){
+
     }
 
     public void save(Model o, String s){
