@@ -28,6 +28,10 @@ class UI{
     });
     win.add(close,0);
   }
+  public Scoreboard getScoreBoard() {
+    return scoreBoard();
+  }
+
   public static void main(String[] args) {
     UI main = new UI(true);
   }
