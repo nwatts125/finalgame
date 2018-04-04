@@ -1,11 +1,13 @@
 import javax.swing.JComponent;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import java.awt.Color;
 
 class Post extends JComponent{
   private JLabel[] cols;
   public Post(int x, int y, String str1, String str2, String str3){
     setBounds(x, y, 150, 50);
+    this.setBackground(Color.blue);
     cols = new JLabel[]{
       new JLabel(str1),
       new JLabel(str2),

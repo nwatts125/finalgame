@@ -9,8 +9,12 @@ public class Scoreboard extends JComponent{
   public Scoreboard(JFrame win, boolean sb){
     isScoreBoardVisible = sb;
     posts = new ArrayList<Post>();
-    setBackground(Color.blue);
-    setBounds(0,0,150,700);
+    for (int i = 0; i < 10; i++) {
+      Post tmp = new Post(0, i * 50,"Memes","Total","Reee");
+      win.add(tmp);
+      posts.add(tmp);
+    }
+    setBounds(0,0,500,700);
     isVisible();
     reDisplayPosts(this);
   }
