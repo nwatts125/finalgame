@@ -4,9 +4,10 @@ import java.awt.event.*;
 class UI{
   JButton close;
   Scoreboard scoreBoard;
-  public UI(boolean sb){
+  public UI(boolean sb, JComponent jc){
     //Window
     JFrame win = new JFrame();
+    jc.setBounds()
     win.setBounds(0,0,1000,700);
     win.setVisible(true);
     win.setLayout(null);

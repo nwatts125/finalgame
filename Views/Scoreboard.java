@@ -14,7 +14,7 @@ public class Scoreboard extends JComponent{
       win.add(tmp);
       posts.add(tmp);
     }
-    setBounds(0,0,500,700);
+    setBounds(0,0,300,700);
     isVisible();
     reDisplayPosts(this);
   }
