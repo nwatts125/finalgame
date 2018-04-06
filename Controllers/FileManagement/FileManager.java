@@ -11,7 +11,6 @@ import java.io.IOException;
  */
 public class FileManager{
     public FileManager(){
-
     }
 
     public void save(Model o, String s){
@@ -27,13 +26,13 @@ public class FileManager{
     }
 
 
-    public Object readSaveFile(String s){
+    public Model readSaveFile(String s){
         try{
             FileInputStream fis = new FileInputStream(s + ".xml");
             XMLDecoder decoder = new XMLDecoder(fis);
             decoder.close();
             fis.close();
-            return decoder.readObject();
+            return (Model)decoder.readObject();
         } catch (IOException ioe){
             ioe.printStackTrace();
         }

@@ -5,11 +5,10 @@ class UI extends JFrame{
   JButton close;
   JComponent game;
   Scoreboard scoreBoard;
-  public UI(boolean sb){
-    setBounds(0,0,1000,700);
+  public UI(int x, int y, int w, int h, boolean sb){
+    setBounds(x,y,w,h);
     setVisible(true);
     setLayout(null);
-    setBounds(0,0,1000,700);
     setResizable(false);
     setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     //Scoreboard
@@ -22,20 +21,16 @@ class UI extends JFrame{
     close.setBounds(0,0,45,45);
     close.addActionListener(new ActionListener() {
       public void actionPerformed(ActionEvent e) {
-        dispose();
+        setVisible(false);
       }
     });
     add(close,0);
   }
-  public void addGame(JComponent jc){
+  public void addGameObject(JComponent jc){
     game = jc;
     add(game);
   }
   public Scoreboard getScoreBoard() {
-    return scoreBoard();
-  }
-
-  public static void main(String[] args) {
-    UI main = new UI(true);
+    return scoreBoard;
   }
 }
