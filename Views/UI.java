@@ -1,34 +1,36 @@
 import javax.swing.*;
 import java.awt.event.*;
 
-class UI{
+class UI extends JFrame{
   JButton close;
+  JComponent game;
   Scoreboard scoreBoard;
-  public UI(boolean sb, JComponent jc){
-    //Window
-    JFrame win = new JFrame();
-    jc.setBounds()
-    win.setBounds(0,0,1000,700);
-    win.setVisible(true);
-    win.setLayout(null);
-    win.setBounds(0,0,1000,700);
-    win.setResizable(false);
-    win.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+  public UI(int x, int y, int w, int h, boolean sb){
+    setBounds(x,y,w,h);
+    setVisible(true);
+    setLayout(null);
+    setResizable(false);
+    setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     //Scoreboard
     if(sb){
-      scoreBoard = new Scoreboard(win, sb);
-      win.add(scoreBoard);
+      scoreBoard = new Scoreboard(this, sb);
+      add(scoreBoard);
     }
     //Close Button
     close = new JButton("X");
     close.setBounds(0,0,45,45);
     close.addActionListener(new ActionListener() {
       public void actionPerformed(ActionEvent e) {
+        setVisible(false);
       }
     });
-    win.add(close,0);
+    add(close,0);
   }
-  public static void main(String[] args) {
-    UI main = new UI(true);
+  public void addGameObject(JComponent jc){
+    game = jc;
+    add(game);
+  }
+  public Scoreboard getScoreBoard() {
+    return scoreBoard;
   }
 }
