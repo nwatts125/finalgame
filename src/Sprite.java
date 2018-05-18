@@ -13,6 +13,13 @@ public abstract class Sprite extends EzImage {
         rect = new Rectangle();
     }
 
+    //constructor, takes in speed and filepath for the icon
+    public Sprite(int x, int y, int w, int h, String fpath){
+        super(x, y, w, h);
+        this.changeImage(fpath);
+        rect = new Rectangle();
+		rect.setBounds(x, y, w, h);
+    }
     //default constructor.  if used, all variables need to be added manually with setters
     public Sprite(){
         super();

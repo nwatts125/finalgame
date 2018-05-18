@@ -4,7 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 
 
-public class Rectangle extends JComponent  {
+public class GameRectangle extends JComponent  {
 
     /**
 	 *
@@ -14,7 +14,7 @@ public class Rectangle extends JComponent  {
 	/**    All values are measured in pixels:  x - horizonal location,  y - vertical location,
      *     w - the width,  h - the height,   color - black
      */
-    public Rectangle(int x, int y, int w, int h)  {
+    public GameRectangle(int x, int y, int w, int h)  {
         super();
         setBounds(x, y, w, h);
         setBackground(Color.black);
@@ -23,7 +23,7 @@ public class Rectangle extends JComponent  {
     /**    All values are measured in pixels:  x - horizonal location,  y - vertical location,
      *     w - the width,  h - the height,   color - fill color
      */
-    public Rectangle(int x, int y, int w, int h, Color c)  {
+    public GameRectangle(int x, int y, int w, int h, Color c)  {
         super();
         setBounds(x, y, w, h);
         setBackground(c);
