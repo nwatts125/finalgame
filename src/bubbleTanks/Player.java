@@ -29,7 +29,7 @@ public class Player{
         return topScore;
     }
 
-    //Returns the bubbleTanks.Player's Current Score
+    //Returns the bubbleTanks.shared.Player's Current Score
     public long getScore() {
         return currentScore;
     }
@@ -45,12 +45,12 @@ public class Player{
             topScore = newScore;
     }
 
-    //Sets the bubbleTanks.Player's current score
+    //Sets the bubbleTanks.shared.Player's current score
     public void setScore(long score) {
         currentScore = score;
     }
 
-    //Sets the bubbleTanks.Player's Lives
+    //Sets the bubbleTanks.shared.Player's Lives
     public void setLives(int lives) {
         this.lives = lives;
     }

@@ -1,3 +1,5 @@
+package shared;
+
 import javax.swing.*;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
@@ -60,7 +62,7 @@ public class Card extends JComponent implements MouseListener{
         value = s;
         return value;
     }
-    //Returns the String in the ImagePanel
+    //Returns the String in the shared.ImagePanel
     public String getQuestion(){
         return question;
     }
@@ -74,7 +76,7 @@ public class Card extends JComponent implements MouseListener{
     {
         return matched;
     }
-    //Allows the text in the ImagePanel to be changed
+    //Allows the text in the shared.ImagePanel to be changed
     public void setQuestion(String q){
         question = q;
     }

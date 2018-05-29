@@ -2,8 +2,9 @@ package bubbleTanks;
 
 import java.awt.*;
 import java.util.Random;
+import shared.Sprite;
 
-public class Enemy extends Sprite{
+public class Enemy extends Sprite {
     private int dx;
     private int dy;
 

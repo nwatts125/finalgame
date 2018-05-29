@@ -1,3 +1,5 @@
+package shared;
+
 import javax.swing.*;
 import java.awt.event.*;
 
@@ -12,7 +14,7 @@ class UI extends JFrame{
     setLayout(null);
     setResizable(false);
     setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-    //Scoreboard
+    //shared.Scoreboard
     if(sb){
       scoreBoard = new Scoreboard(this, sb);
       add(scoreBoard);
@@ -34,7 +36,7 @@ class UI extends JFrame{
     setLayout(null);
     setResizable(false);
     setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-    //Scoreboard
+    //shared.Scoreboard
     if(sb){
       scoreBoard = new Scoreboard(this, sb);
       add(scoreBoard);
