@@ -1,3 +1,5 @@
+import bubbleTanks.GRectangle;
+
 import javax.swing.*;
 import java.awt.*;
 import java.util.ArrayList;
@@ -8,8 +10,8 @@ public class Scoreboard extends JComponent{
 
     public Scoreboard(JFrame win, boolean sb){
         isScoreBoardVisible = sb;
-        GameRectangle borderLine = new GameRectangle(295,0,5,700);
-        GameRectangle borderLineTwo = new GameRectangle(0,0,300,5);
+        GRectangle borderLine = new GRectangle(295,0,5,700);
+        GRectangle borderLineTwo = new GRectangle(0,0,300,5);
         posts = new ArrayList<Post>();
         setBounds(0,50,300,700);
         add(borderLine);
