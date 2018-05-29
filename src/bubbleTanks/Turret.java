@@ -3,6 +3,7 @@ package bubbleTanks;
 import java.awt.*;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionListener;
+import shared.Sprite;
 
 public class Turret extends Sprite implements MouseMotionListener {
 

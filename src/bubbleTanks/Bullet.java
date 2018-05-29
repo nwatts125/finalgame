@@ -1,5 +1,7 @@
 package bubbleTanks;
 
+import shared.Sprite;
+
 public class Bullet extends Sprite {
 
     int speed = 10;

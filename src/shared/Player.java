@@ -1,3 +1,5 @@
+package shared;
+
 public class Player{
 
     public int topScore;
@@ -14,7 +16,7 @@ public class Player{
     public int getTopScore(){
         return topScore;
     }
-    //Returns the Player's Current Score
+    //Returns the shared.Player's Current Score
     public int getScore() {
         return currentScore;
     }
@@ -27,11 +29,11 @@ public class Player{
         if(topScore<newScore)
             topScore = newScore;
     }
-    //Sets the Player's current score
+    //Sets the shared.Player's current score
     public void setScore(int score) {
         currentScore = score;
     }
-    //Sets the Player's Lives
+    //Sets the shared.Player's Lives
     public void setLives(int lives) {
         this.lives = lives;
     }

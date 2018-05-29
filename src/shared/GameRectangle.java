@@ -1,4 +1,4 @@
-package Views;
+package shared;
 
 import javax.swing.*;
 import java.awt.*;

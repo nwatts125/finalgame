@@ -1,5 +1,7 @@
 package bubbleTanks;
 
+import shared.Sprite;
+
 import javax.swing.*;
 import java.awt.*;
 import java.util.*;
@@ -135,7 +137,7 @@ public class BubbleTanks extends JFrame{
     public void gameOver(){
         t.cancel();
         tank.resetKeys();
-        int pane = JOptionPane.showConfirmDialog(null, "bubbleTanks.BubbleTanks Over!\nWould you like to try again?", "bubbleTanks.BubbleTanks Over", JOptionPane.YES_NO_OPTION);//0=yes, 1=no
+        int pane = JOptionPane.showConfirmDialog(null, "Game Over!\nWould you like to try again?", "Game Over", JOptionPane.YES_NO_OPTION);//0=yes, 1=no
         if(pane==0){//if yes
             for(Bullet b: allBullets)
                 remove(b);
@@ -148,6 +150,8 @@ public class BubbleTanks extends JFrame{
             allCoins.clear();
             waveNum = 0;
             setup();
+        }else{
+            System.exit(0);
         }
     }
 

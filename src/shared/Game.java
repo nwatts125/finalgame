@@ -1,6 +1,5 @@
-import javax.swing.JFrame;
-import javax.swing.JComponent;
-import java.awt.Component;
+package shared;
+
 class Game extends FileManager{
     UI ui;
     public Game(int x, int y, int w, int h, boolean sb){

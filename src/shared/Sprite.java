@@ -1,4 +1,6 @@
-package bubbleTanks;
+package shared;
+
+import bubbleTanks.EzImage;
 
 import java.awt.*;
 
