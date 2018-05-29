@@ -1,4 +1,4 @@
-import java.awt.*;
+import java.awt.Rectangle;
 
 public abstract class Sprite extends EzImage {
     protected int dx, dy;//variables for speed, for x and y

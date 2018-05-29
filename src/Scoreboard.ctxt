@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Scoreboard
+comment1.params=win\ sb
+comment1.target=Scoreboard(javax.swing.JFrame,\ boolean)
+comment2.params=win
+comment2.target=void\ reDisplayPosts(javax.swing.JComponent)
+comment3.params=b
+comment3.target=void\ setScoreBoardVisible(boolean)
+comment4.params=
+comment4.target=boolean\ getScoreBoardVisible()
+comment5.params=p\ i
+comment5.target=void\ setPost(Post,\ int)
+comment6.params=p
+comment6.target=void\ addPost(Post)
+comment7.params=i
+comment7.target=void\ getPost(int)
+comment8.params=args
+comment8.target=void\ main(java.lang.String[])
+numComments=9

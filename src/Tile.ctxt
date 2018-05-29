@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Tile
+comment1.params=x\ y\ w\ h\ p
+comment1.target=Tile(int,\ int,\ int,\ int,\ java.lang.String)
+comment2.params=
+comment2.target=void\ move()
+numComments=3

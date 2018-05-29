@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=Bullet
+comment1.params=x\ y\ angle\ p\ thePlayer
+comment1.target=Bullet(int,\ int,\ double,\ boolean,\ Player)
+comment2.params=i\ i1\ angle\ b
+comment2.target=Bullet(int,\ int,\ double,\ boolean)
+comment3.params=
+comment3.target=boolean\ isPlayer()
+comment4.params=newSpeed
+comment4.target=void\ setSpeed(int)
+comment5.params=
+comment5.target=int\ getSpeed()
+comment6.params=
+comment6.target=void\ addBuff()
+comment7.params=
+comment7.target=void\ move()
+numComments=8

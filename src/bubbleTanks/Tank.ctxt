@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.target=Tank
+comment1.params=x\ y\ width\ height\ j\ p
+comment1.target=Tank(int,\ int,\ int,\ int,\ BubbleTanks,\ Player)
+comment10.params=g
+comment10.target=void\ paint(java.awt.Graphics)
+comment2.params=
+comment2.target=Turret\ getTurret()
+comment3.params=
+comment3.target=void\ setDirection()
+comment4.params=
+comment4.target=void\ move()
+comment5.params=e
+comment5.target=void\ keyTyped(java.awt.event.KeyEvent)
+comment6.params=e
+comment6.target=void\ keyPressed(java.awt.event.KeyEvent)
+comment7.params=e
+comment7.target=void\ keyReleased(java.awt.event.KeyEvent)
+comment8.params=
+comment8.target=void\ resetKeys()
+comment9.params=e
+comment9.target=void\ mouseReleased(java.awt.event.MouseEvent)
+numComments=11

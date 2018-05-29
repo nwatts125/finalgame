@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=ImagePanel
+comment1.params=
+comment1.target=ImagePanel()
+comment2.params=x\ y\ w\ h
+comment2.target=ImagePanel(int,\ int,\ int,\ int)
+comment3.params=x\ y\ w\ h\ s
+comment3.target=ImagePanel(int,\ int,\ int,\ int,\ java.lang.String)
+comment4.params=s
+comment4.target=void\ setImage(java.lang.String)
+comment5.params=g
+comment5.target=void\ paint(java.awt.Graphics)
+numComments=6

@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.target=BubbleTanks
+comment1.params=
+comment1.target=BubbleTanks()
+comment10.params=waveN
+comment10.target=void\ waveX(int)
+comment2.params=
+comment2.target=void\ setup()
+comment3.params=b
+comment3.target=void\ addBullet(Bullet)
+comment4.params=
+comment4.target=Sprite\ getTank()
+comment5.params=
+comment5.target=Player\ getPlayer()
+comment6.params=
+comment6.target=void\ pause()
+comment7.params=
+comment7.target=void\ unpause()
+comment8.params=p
+comment8.target=void\ updatePoints(long)
+comment9.params=
+comment9.target=void\ gameOver()
+numComments=11

@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.target=Sprite
+comment1.params=deltax\ deltay\ fpath
+comment1.target=Sprite(int,\ int,\ java.lang.String)
+comment10.params=s
+comment10.target=boolean\ collides(Sprite)
+comment2.params=x\ y\ w\ h\ fpath
+comment2.target=Sprite(int,\ int,\ int,\ int,\ java.lang.String)
+comment3.params=
+comment3.target=Sprite()
+comment4.params=x\ y
+comment4.target=void\ setLocation(int,\ int)
+comment5.params=deltax\ deltay
+comment5.target=void\ setSpeed(int,\ int)
+comment6.params=path
+comment6.target=void\ changeImage(java.lang.String)
+comment7.params=w\ h
+comment7.target=void\ setSize(int,\ int)
+comment8.params=
+comment8.target=void\ move()
+comment9.params=
+comment9.target=java.awt.Rectangle\ getRect()
+numComments=11
