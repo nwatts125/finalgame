@@ -19,9 +19,9 @@ Tank extends Sprite implements KeyListener {
     int speed = 5;
 
     Turret turret;
-    Game win;
+    BubbleTanks win;
 
-    public Tank(int x, int y, int width, int height, Game j, Player p){
+    public Tank(int x, int y, int width, int height, BubbleTanks j, Player p){
         super(x,y,width,height, "src/images/Lvl1Tank.png");
         addKeyListener(this);
         turret = new Turret(this);

@@ -27,7 +27,7 @@ public class Shop extends JFrame implements ActionListener, KeyListener{
 
     public static Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
 
-    Game game;
+    BubbleTanks game;
     Player player;
 
     JLabel points;
@@ -35,7 +35,7 @@ public class Shop extends JFrame implements ActionListener, KeyListener{
     int buttonWidth = 400;
     int buttonSpace;
 
-    public Shop(Game frame){
+    public Shop(BubbleTanks frame){
         super();
         setExtendedState(JFrame.MAXIMIZED_BOTH);
         setUndecorated(true);
@@ -122,7 +122,7 @@ public class Shop extends JFrame implements ActionListener, KeyListener{
         if(e.getSource()==close){
             int pane = JOptionPane.showConfirmDialog(null, "Are You Sure You want to Quit?", "QUIT?", JOptionPane.YES_NO_OPTION);//0=yes, 1=no
             if(pane==0){//if yes
-                Game.t.cancel();
+                BubbleTanks.t.cancel();
                 game.dispose();
                 this.dispose();
             }

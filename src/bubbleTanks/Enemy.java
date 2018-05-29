@@ -9,7 +9,7 @@ public class Enemy extends Sprite{
 
     Random gen = new Random();
 
-    public static Game game;
+    public static BubbleTanks game;
 
     Turret turret;
     double error = 0.00;
@@ -18,7 +18,7 @@ public class Enemy extends Sprite{
     int time;
     int interval = 100;
 
-    public Enemy(int x, int y, int width, int height, Game theGame){
+    public Enemy(int x, int y, int width, int height, BubbleTanks theGame){
         super(x,y,width,height, "src/images/Lvl1Enemy.png");
 
         game = theGame;
@@ -32,7 +32,7 @@ public class Enemy extends Sprite{
         time = gen.nextInt(100)+50;
     }
 
-    public static Game getGame(){
+    public static BubbleTanks getGame(){
         return game;
     }
 

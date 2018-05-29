@@ -5,7 +5,7 @@ import java.awt.*;
 import java.util.*;
 import java.util.Timer;
 
-public class Game extends JFrame{
+public class BubbleTanks extends JFrame{
 
     GRectangle enviro;
     protected static Tank tank;
@@ -34,7 +34,7 @@ public class Game extends JFrame{
 
     Shop shop;
 
-    public Game()
+    public BubbleTanks()
     {
         super("Bubble Tanks");
         setExtendedState(JFrame.MAXIMIZED_BOTH);
@@ -135,7 +135,7 @@ public class Game extends JFrame{
     public void gameOver(){
         t.cancel();
         tank.resetKeys();
-        int pane = JOptionPane.showConfirmDialog(null, "bubbleTanks.Game Over!\nWould you like to try again?", "bubbleTanks.Game Over", JOptionPane.YES_NO_OPTION);//0=yes, 1=no
+        int pane = JOptionPane.showConfirmDialog(null, "bubbleTanks.BubbleTanks Over!\nWould you like to try again?", "bubbleTanks.BubbleTanks Over", JOptionPane.YES_NO_OPTION);//0=yes, 1=no
         if(pane==0){//if yes
             for(Bullet b: allBullets)
                 remove(b);
